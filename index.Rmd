@@ -1,11 +1,13 @@
 ---
-title: "Use of Force within Seattle PD"
-author: "Nicholas Nugraha"
+title: "An Analysis of Police Using Force in Seattle"
+author: "by Nicholas Nugraha"
 date: "4/12/2022"
 output: html_document
 ---
 
-```{r reports_over_time_chart.R, echo = FALSE, message = FALSE, code = readLines("reports_over_time_chart.R")}
+
+
+```{r reports_over_time_chart.R, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("reports_over_time_chart.R")}
 ```
 
-```{r incidents_by_race_chart.R, echo = FALSE, message = FALSE, code = readLines("incidents_by_race_chart.R")}
+```{r incidents_by_race_chart.R, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("incidents_by_race_chart.R"), fig.width = 9}

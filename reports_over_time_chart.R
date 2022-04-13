@@ -1,6 +1,7 @@
 library("dplyr")
 library("ggplot2")
 library("forcats")
+library("plotly")
 
 use_of_force_data <- read.csv("//Users//nicknugraha//PODUW//powerNAP//Use_Of_Force.csv")
 
@@ -16,7 +17,9 @@ num_reports_per_year <- use_of_force_data %>%
   summarise(n = n())
 
 reports_over_time <- ggplot(num_reports_per_year) +
-  geom_col(mapping = aes(x = Occured_date_time, y = n)) +
-  labs(title = "Number of Reports Over Time", x = "Year", y = "Reports")
+  geom_col(mapping = aes(x = Occured_date_time, y = n, text = paste0("Year: ", Occured_date_time, "\nNumber of Reports: ", n))) +
+  labs(title = "Number of Reports Over Time", x = "Year", y = "Number of Reports")
 
-reports_over_time
+interactive_chart <- ggplotly(reports_over_time, tooltip = "text")
+
+interactive_chart
