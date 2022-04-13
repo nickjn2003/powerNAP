@@ -1,10 +1,11 @@
 ---
-title: "An Analysis of Police Using Force in Seattle"
+title: "How Has Seattle Police Used Physical Force?"
 author: "by Nicholas Nugraha"
 date: "4/12/2022"
 output: html_document
 ---
-
+### The Issue
+Police brutality has been a long standing issue that remains to be resolved to this day.
 
 
 ```{r reports_over_time_chart.R, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("reports_over_time_chart.R")}

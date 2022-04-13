@@ -18,6 +18,6 @@ reports_by_race <- ggplot(num_reports_by_race) +
         axis.title.y = element_blank(), 
         axis.ticks.y = element_blank())
 
-interactive_chart <- ggplotly(reports_by_race, tooltip = "text")
+interactive_race_chart <- ggplotly(reports_by_race, tooltip = "text")
 
-interactive_chart
+interactive_race_chart
