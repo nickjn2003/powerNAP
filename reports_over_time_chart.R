@@ -18,3 +18,5 @@ num_reports_per_year <- use_of_force_data %>%
 reports_over_time <- ggplot(num_reports_per_year) +
   geom_col(mapping = aes(x = Occured_date_time, y = n)) +
   labs(title = "Number of Reports Over Time", x = "Year", y = "Reports")
+
+reports_over_time

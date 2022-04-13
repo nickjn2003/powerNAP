@@ -16,3 +16,5 @@ reports_by_race <- ggplot(num_reports_by_race) +
   theme(axis.text.y = element_blank(), 
         axis.title.y = element_blank(), 
         axis.ticks.y = element_blank())
+
+reports_by_race
