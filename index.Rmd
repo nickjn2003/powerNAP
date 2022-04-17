@@ -7,7 +7,7 @@ output: html_document
 
 <style type="text/css">
   body{
-  font-size: 12pt;
+  font-size: 14pt;
 }
 </style>
 
@@ -27,4 +27,8 @@ Another aspect of the dataset I wanted to explore was the racial breakdown of th
 ```{r incidents_by_race_chart.R, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("incidents_by_race_chart.R"), fig.width = 9}
 ```
 
-In the past 8 years, the most amount of force has been used on White people, with 5595 incidents, followed by African American people with 4129 incidents. There are also a large amount of unspecified race incidents, possibly due to intersecting racial identities. The rest of the races have relatively low numbers of incidents compared to the top three races which hold over 91% of the total data. 
+In the past 8 years, the most amount of force has been used on white people, with 5595 incidents, followed by African American people with 4129 incidents. There are also a large amount of unspecified race incidents, possibly due to intersecting racial identities. The rest of the races have relatively low numbers of incidents compared to the top three races which hold over 91% of the total data.
+
+We can also consider data from the [World Population Review](https://worldpopulationreview.com/us-cities/seattle-wa-population) which show that, on average, over 60% of the population consists of white people while just over 7% consist of African Americans. Along with that, Asians make up about 15% and Hispanic people make up another 6%. 
+
+Even though the number of incidents is higher for white people than it is for African American people, compared to the overall demographics of Seattle, the numbers are very disproportional. African Americans make up 7% of Seattle's total population, yet they hold 29% of the incidents reported while white people make up about 60% of Seattle's total population and hold only 40% of the incidents reported.
