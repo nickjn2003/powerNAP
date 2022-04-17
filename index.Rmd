@@ -27,3 +27,4 @@ Another aspect of the dataset I wanted to explore was the racial breakdown of th
 ```{r incidents_by_race_chart.R, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("incidents_by_race_chart.R"), fig.width = 9}
 ```
 
+In the past 8 years, the most amount of force has been used on White people, with 5595 incidents, followed by African American people with 4129 incidents. There are also a large amount of unspecified race incidents, possibly due to intersecting racial identities. The rest of the races have relatively low numbers of incidents compared to the top three races which hold over 91% of the total data. 
