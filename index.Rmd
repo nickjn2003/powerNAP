@@ -4,6 +4,13 @@ author: "by Nicholas Nugraha"
 date: "4/12/2022"
 output: html_document
 ---
+
+<style type="text/css">
+  body{
+  font-size: 12pt;
+}
+</style>
+
 Police brutality remains an ongoing problem affecting many communities across the world. Recently, the actions of law enforcement are being closely observed more than ever by the citizens of these communities. Perhaps one of the biggest reasons for this is the Black Lives Matter movement which took the world by storm after the death of George Floyd in 2020. As a result, I decided to analyze the city of Seattle's police department and how they have used physical force in their streets. This data was obtained from the [City of Seattle Open Data portal](https://data.seattle.gov).
 
 I found that from the year 2014 to 2021 the average amount of use of force reports per year is around 1737. The highest number of reports made were in the year 2018 with 2264 reports, while the lowest number of reports made were in the year 2021 with 1077 reports. 
@@ -15,6 +22,8 @@ While 8 years of data may not be enough to analyze Seattle's entire history with
 
 Consequently, there was also a large drop in number of reports in the following year 2021. According to [AP News](https://apnews.com/article/seattle-police-government-and-politics-e0ce15086d8bf06502659386148d94fa), over 200 police officers have left their jobs mainly due to the anti-police sentiments that resided in Seattle. With Seattle PD hitting record low counts, use of force reports are less common within the community.
 
-
+Another aspect of the dataset I wanted to explore was the racial breakdown of the reports made. Every report contains the race of the subject that the force was used on, which can be seen in the chart below.
 
 ```{r incidents_by_race_chart.R, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("incidents_by_race_chart.R"), fig.width = 9}
+```
+
